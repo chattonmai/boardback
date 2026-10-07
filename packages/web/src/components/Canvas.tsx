@@ -758,7 +758,7 @@ const Canvas = () => {
         onSelectionChange={({ nodes }: { nodes: Node[] }) => useStore.getState().setSelectedNodes(nodes.map(n => n.id))}
         nodeTypes={nodeTypes as any}
         fitView
-        fitViewOptions={{ padding: 0.6, maxZoom: 1 }}
+        fitViewOptions={{ padding: 0.6, maxZoom: 1, minZoom: 0.5 }}
         minZoom={0.1}
         defaultViewport={{ x: 0, y: 0, zoom: 0.55 }}
         connectionMode={'loose' as any}
